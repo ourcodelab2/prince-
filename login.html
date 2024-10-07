@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LoginPage</title>
+    <!-- link File -->
+    <link rel="stylesheet" href="login.css">
+    <script src="login.js" defer></script>
+    <!-- Link Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aclonica&family=Merriweather&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <!-- Link Icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div id="login">
+        <h1 class="logo">logo.</h1>
+        <div class="section">
+            <span>Login</span>
+            <div class="detail">
+                <label for="username">Username or Gmail address : </label>
+                <input id="username" type="text">
+                <label for="password">Password : </label>
+                <input id="password" type="password">  
+                <span class="eye-icon" style="font-size: 2rem"><i class="fa-regular fa-eye" onclick="togglePasswordVisibility()"></i></span>             
+            </div>
+            <span>Or</span>
+            <div class="icon">
+                <i class="fa-brands fa-google"></i>
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-microsoft"></i>
+            </div>
+            <div class="continue">
+                <button>Continue</button>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

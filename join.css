@@ -1,0 +1,66 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    /* colors */
+    --primary-color: #05041c;
+    --text-primaryClr: rgb(255, 255, 255);
+    --text-secondryClr: #575353;
+
+    /* fonts */
+    --logo-ff: "Aclonica", sans-serif;
+    --logo-fw: 400;
+    --primarytext-ff: "Roboto", sans-serif;
+    --primarytext-fw: 300;
+    --secondarytext-ff: "Merriweather", serif;
+    --secondarytext-fw: 400;
+} 
+body,html {
+    width: 100%;
+    height: 100%;
+    font-size: 62.5%;
+    background-color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Default Size */
+#join {
+    text-align: center;
+}
+.logo {
+    color: var(--text-primaryClr);
+    font-size: 7vw;
+    font-family: var(--logo-ff);
+    font-weight: var(--logo-fw);
+    padding-bottom: 1.5rem;
+    padding-inline: 8rem;
+}
+span {
+    color: var(--text-secondryClr);
+    font-size: 1.2vw;
+    font-family: var(--secondarytext-ff);
+    font-weight: var(--secondarytext-fw);
+    display: block;
+    padding-bottom: 6rem;
+}
+.btn {
+    display: flex;
+    justify-content: space-between;
+}
+.btn button {
+    color: var(--text-primaryClr);
+    border: none;
+    border-radius: 0.5rem;
+    background-color: #787474;
+    font-size: 2.5em;
+    font-family: var(--secondarytext-ff);
+    font-weight: var(--secondarytext-fw);
+    padding: 1.5vh 4.5vw;
+    cursor: pointer;
+}

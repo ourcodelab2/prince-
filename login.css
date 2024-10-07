@@ -1,0 +1,78 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    /* colors */
+    --primary-color: #05041c;
+    --secondary-colour: #272424;
+    --text-primaryClr: rgb(255, 255, 255);
+    --text-secondryClr: #575353;
+
+    /* fonts */
+    --logo-ff: "Aclonica", sans-serif;
+    --logo-fw: 400;
+    --primarytext-ff: "Roboto", sans-serif;
+    --primarytext-fw: 300;
+    --secondarytext-ff: "Merriweather", serif;
+    --secondarytext-fw: 400;
+} 
+body,html {
+    width: 100%;
+    height: 100%;
+    font-size: 62.5%;
+    background-color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logo {
+    color: var(--text-primaryClr);
+    font-size: 7vw;
+    font-family: var(--logo-ff);
+    font-weight: var(--logo-fw);
+    text-align: center;
+    padding-bottom: 1.5rem;
+    padding-inline: 8rem;
+}
+.section {
+    border: 1px solid #ffffff;
+}
+.section span:first-child {
+    display: block;
+    text-align: center;
+    font-size: 2rem;
+    font-family: var(--secondarytext-ff);
+    font-weight: var(--secondarytext-fw);
+    color: var(--text-primaryClr);
+    background-color: var(--secondary-colour);
+}
+.detail label {
+    display: block;
+    color: var(--text-primaryClr);
+    font-size: 1.4rem;
+    font-family: var(--primarytext-ff);
+    font-weight: var(--primarytext-fw);
+}
+.detail input {
+    display: block;
+    outline-color: var(--primary-color);
+    border-radius: 0.5rem;
+}
+.icon {
+    text-align: center;
+}
+.continue {
+    background-color: var(--secondary-colour);    
+}
+.continue button {
+    display: block;
+    margin-inline: auto;
+    background-color: transparent;
+    color: var(--text-primaryClr);
+    font-size: 1.5rem;
+    border: none;
+}
