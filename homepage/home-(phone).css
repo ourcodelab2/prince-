@@ -1,0 +1,24 @@
+@media only screen and (max-width: 450px) {
+
+/* HEADER */
+header {
+    display: flex;
+    width: 100%;
+}
+header .logo {
+    border: var(--border-dummy);
+    width: 45%;
+}
+header nav {
+    border: var(--border-dummy);
+    display: none;
+}
+nav ul {
+    display: flex;
+}
+header .start-btn {
+    border: var(--border-dummy);
+}
+
+
+}
