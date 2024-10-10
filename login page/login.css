@@ -1,0 +1,105 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    /* colors */
+    --primary-color: #05041c;
+    --secondary-color: #54545f;
+    --text-primaryClr: rgb(255, 255, 255);
+    --text-secondryClr: #444141;
+
+    /* fonts */
+    --logo-ff: "Aclonica", sans-serif;
+    --logo-fw: 400;
+    --primarytext-ff: "Roboto", sans-serif;
+    --primarytext-fw: 300;
+    --secondarytext-ff: "Merriweather", serif;
+    --secondarytext-fw: 400;
+} 
+body,html {
+    width: 100%;
+    height: 100%;
+    font-size: 62.5%;
+    background-color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logo {
+    color: var(--text-primaryClr);
+    font-size: 3vw;
+    font-family: var(--logo-ff);
+    font-weight: var(--logo-fw);
+    text-align: center;
+    padding-bottom: 1.5rem;
+    padding-inline: 7vw;
+}
+.section {
+    border: 1px solid #6a6363;
+    border-radius: 1rem;
+}
+.section span:first-child {
+    display: block;
+    text-align: center;
+    font-size: 2rem;
+    font-family: var(--secondarytext-ff);
+    font-weight: var(--secondarytext-fw);
+    color: var(--text-primaryClr);
+    background-color: var(--secondary-color);
+    padding: 1rem 0rem;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+.detail label {
+    display: block;
+    color: var(--text-primaryClr);
+    font-size: 1.4rem;
+    font-family: var(--primarytext-ff);
+    font-weight: var(--primarytext-fw);
+}
+.detail input {
+    display: block;
+    outline: none;
+    border-radius: 0.5rem;
+}
+.pass-input {
+    background: #fff;
+    display: flex;
+    align-items: center;
+}
+.pass-input input {
+    width: 100%;
+    border: 0;
+    outline: none;
+}
+.pass-input img {
+    width: 35px;
+    cursor:  pointer;
+}
+.icon {
+    text-align: center;
+}
+.icon i {
+    font-size: 2rem;
+}
+.continue {
+    background-color: var(--secondary-color);    
+    padding: 1rem auto;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    cursor: pointer;
+}
+.continue button {
+    display: block;
+    margin-inline: auto;
+    background-color: transparent;
+    color: var(--text-primaryClr);
+    font-size: 1.5rem;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem 0rem;
+}
