@@ -76,9 +76,13 @@ body,html {
     border: 0;
     outline: none;
 }
-.pass-input img {
-    width: 35px;
-    cursor:  pointer;
+.pass-input input[type="password"] {
+    -webkit-text-security: disc;
+    -moz-appearance: none;
+}
+.pass-input input[type="password"]::-ms-reveal,
+.pass-input input[type="password"]::-ms-clear {
+    display: block;
 }
 .icon {
     text-align: center;
